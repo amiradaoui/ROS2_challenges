@@ -21,20 +21,15 @@ Le fichier `simulation_launch.py` effectue les actions suivantes :
 cd ~/challenge_ws
 colcon build --packages-select challenge_9_launch
 source install/setup.bash
-2. Lancement avec les valeurs par défaut
-
-Par défaut, la caméra se lance en 720p à 30 FPS :
-Bash
-
+````
+2. Lancement avec les valeurs par défaut, la caméra se lance en 720p à 30 FPS :
+````Bash
 ros2 launch challenge_9_launch simulation_launch.py
-
-3. Lancement avec arguments personnalisés
-
-Pour modifier la configuration (par exemple 1080p et 60 FPS) :
-Bash
-
+````
+3. Lancement avec arguments personnalisés Pour modifier la configuration (par exemple 1080p et 60 FPS) :
+````Bash
 ros2 launch challenge_9_launch simulation_launch.py resolution:='1080p' fps:=60
-
+````
 Résultat Attendu
 
 Le nœud affiche dans la console un message de confirmation indiquant les paramètres reçus :

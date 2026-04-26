@@ -11,21 +11,19 @@ Ce challenge implémente un **Service ROS 2** nommé `/calcule`. Il utilise le m
 ## Instructions d'exécution
 
 ### 1. Compilation
-```bash
-cd ~/challenge_ws
-colcon build --packages-select challenge_3_calculator
-source install/setup.bash
+  ```bash
+  cd ~/challenge_ws
+  colcon build --packages-select challenge_3_calculator
+  source install/setup.bash
+```
 ### 2.Lancement du Serveur
-```Bash
-ros2 run challenge_3_calculator calculator_service_exe
-
+   ```Bash
+    ros2 run challenge_3_calculator calculator_service_exe
+````
 3. Appel du Service (Client)
-
 Dans un nouveau terminal, exécutez la commande suivante :
-Bash
-
+  ````Bash
 ros2 service call /calcule example_interfaces/srv/AddTwoInts "{a: 10, b: 5}"
-
-Résultat obtenu
-
+````
+Résultat obtenu:
 Le service renvoie la somme des deux nombres fournis dans la requête

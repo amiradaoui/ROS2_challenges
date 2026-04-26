@@ -22,14 +22,15 @@ L'objectif de ce challenge est de configurer des profils QoS spécifiques pour a
 cd ~/challenge_ws
 colcon build --packages-select challenge_11_qos
 source install/setup.bash
+````
 Lancement
-Bash
+````Bash
 
 ros2 run challenge_11_qos qos_exe
-
+````
 Vérification des QoS
 
 Pendant que le nœud tourne, vous pouvez vérifier les paramètres appliqués avec :
-Bash
+````Bash
 
 ros2 topic info /scan --verbose
